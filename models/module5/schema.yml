@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: raw
+    tables:
+    - name: dbt_customers
+      external:
+        location: "@public.my_s3/module5/external_tables/"
+        file_format: "public.module5_csv"
+        infer_schema: true
