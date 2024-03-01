@@ -8,3 +8,8 @@ sources:
         location: "@public.my_s3/module5/external_tables/"
         file_format: "public.module5_csv"
         infer_schema: true
+    - name: il_orders
+      external:
+        location: "@public.my_s3/module5/incremental_loads/"
+        file_format: "public.module5_csv"
+        infer_schema: true
