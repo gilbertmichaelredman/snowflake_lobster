@@ -1,0 +1,9 @@
+version: 2
+
+seeds:
+  - name: countries
+    config:
+      schema: seed_data
+  - name: ports
+    config:
+      schema: seed_data
