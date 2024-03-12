@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+  - name: lab_two
+    tables:
+    - name: bc_orders
+      external:
+        location: "@public.my_s3/module6/lab2/"
+        file_format: "raw.dc_orders_csv"
+        infer_schema: true
+    - name: bc_lineitems
+      external:
+        location: "@public.my_s3/module6/lab2/lineitems"
+        file_format: "raw.dc_orders_csv"
+        infer_schema: true
