@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+  - name: mmdw
+    database: lobster_db  
+    schema: AURORA_POSTGRES_MMDW_PROD
+    tables:
+      - name: contact
+      
+  - name: tsdw
+    database: lobster_db  
+    schema: BIGQUERY_DB_TSDW_POSEIDON
+    tables:
+      - name: shipment
+        
